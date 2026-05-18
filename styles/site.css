@@ -17,6 +17,10 @@ p {
     font-size: 18px;
 }
 
+.hidden {
+    display: none;
+}
+
 .directory {
     list-style: none;
     padding: 0;
@@ -176,6 +180,19 @@ footer {
 
 .box p {
     padding-right: 30px !important;
+}
+
+button {
+    background-color: #B20032;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#datawrapper-chart-lQMkq {
+    display: none;
 }
 
 @media (max-width: 900px) {

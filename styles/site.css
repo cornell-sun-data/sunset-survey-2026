@@ -154,6 +154,10 @@ header h1 {
     cursor: pointer;
 }
 
+.card.pie {
+    align-items:normal;
+}
+
 footer {
     background-color: #B20032;
     width: 100%;
@@ -168,6 +172,7 @@ footer {
     width:100% !important;
     gap: 10px;
     justify-content: center;
+    align-items: center;
 }
 
 .box {
@@ -197,6 +202,18 @@ hr {
 
 #datawrapper-chart-lQMkq {
     display: none;
+}
+
+#datawrapper-chart-hCpf3 {
+    display: none;
+}
+
+.box {
+    font-size: 18px;
+}
+
+.box.text {
+    align-items: center;
 }
 
 @media (max-width: 980px) {

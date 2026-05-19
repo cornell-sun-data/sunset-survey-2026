@@ -38,12 +38,43 @@
                 <h3>EXPLORE</h3>
                 <hr>
                 <ul>
-                    <li><a href="#section1">tktkt</a></li>
-                    <li><a href="#section2">tktkt</a></li>
-                    <li><a href="#section3">tktkt</a></li>
+                    <li><a href="#section1post">Plans</a></li>
+                    <li><a href="#section2post">Reflection</a></li>
                 </ul>
             </nav>
         </aside>
+        <h2 id="section1post">Plans</h2>
+        <div class="card pie">
+        <div class="box">
+        <p>Toggle the graph below to explore the Class of 2026's plans post-graduation!</p>
+        <div class="options">
+                <button type="button" onclick="showIframe('datawrapper-chart-N5bsf')">LIVING LOCATIONS</button>
+                <button type="button" onclick="showIframe('datawrapper-chart-hCpf3')">CAREER</button>
+                <p>48% of respondents reported having a job lined up immediately following graduation. 30.4% will be attending graduate school. The remaining 21.6% will either be continuing to apply to job or graduate school, will be taking a gap year, or have a summer internship.</p>
+                <p>New York is the most popular post-graduate living destination for the Class of 2026, with 37% of respondents reporting that they will be staying within the state. 11% with be living in California while 7% are heading abroad.</p>
+                <p>Among those attending graduate school, staying at Cornell is the most popular destination to continue their studies. 32.2% of graduating senior respondents attending graduate school reported staying at Cornell. Other institutions with multiple respondents attending are Columbia University, Johns Hopkins University, and Stanford University.</p>
+        </div>
+        </div>
+        <div class="box">
+            <p> </p>
+            <iframe title="Class of 2026 Post-Grad Living Locations" aria-label="Pie Chart" id="datawrapper-chart-N5bsf" src="https://datawrapper.dwcdn.net/N5bsf/1/" scrolling="no" frameborder="0" style="width: 80%; min-width: 80% !important; border: none;" height="200" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+            <iframe title="Class of 2026 Immediate Post-Grad Plans" aria-label="Pie Chart" id="datawrapper-chart-hCpf3" src="https://datawrapper.dwcdn.net/hCpf3/1/" scrolling="no" frameborder="0" style="width: 80%; min-width: 80% !important; border: none;" height="200" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+            <p> </p>
+        </div>
+        </div>
+        <hr>
+        <div>
+            <h2 id="section2post">Reflection</h2>
+            <div class="card">
+                <div class="box">
+                    <iframe title="Class of 2026 Satisfaction &amp;amp; Preparedness Ratings" aria-label="Grouped Bars" id="datawrapper-chart-Xqa9f" src="https://datawrapper.dwcdn.net/Xqa9f/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="675" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+                </div>
+                <div class="box text">
+                    <p>Survey respondents were asked to score their satisfaction with the education they received at Cornell. The scale was from one to five with one representing not satisfied at all and five being extremely satisfied. Respondents from the Brooks School reported the highest satisfaction with their Cornell experience, however a small sample size skewed those results. Behind Brooks, respondents from Dyson had the second highest average satisfaction with 4.3. Respondents from AAP reported the lowest average satisfaction with 3.5.</p>
+                    <p>Respondents were also asked to score how prepared they feel to take on life after graduation. Respondents could chose a number one through five with one being not prepared at all and five being extremely prepared. Average prepareness by college tended to be less than satisfaction. For respondents from Dyson and AAP, however, average scores for satisfaction and preparedness were equal.</p>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         
@@ -55,5 +86,16 @@
         toggle.addEventListener('click', () => {
             nav.classList.toggle('active');
         });
+    </script>
+    <script>
+        function showIframe(iframeId) {
+            var if1 = document.getElementById('datawrapper-chart-N5bsf');
+            var if2 = document.getElementById('datawrapper-chart-hCpf3');
+
+            if1.style.display = 'none';
+            if2.style.display = 'none';
+
+            document.getElementById(iframeId).style.display = 'block';
+        }
     </script>
 </body>

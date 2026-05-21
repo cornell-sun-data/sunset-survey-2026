@@ -227,8 +227,16 @@ hr {
         flex-direction: column;
     }
 
+    .main-title {
+        font-size: 30px;
+    }
+
     .menu-toggle:hover {
         color: grey;
+    }
+
+    .home-body li a{
+        font-size: 16px;
     }
 
     header {

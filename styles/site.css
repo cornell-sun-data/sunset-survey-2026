@@ -279,3 +279,9 @@ hr {
         padding-top: 50px;
     }
 }
+
+@media (max-width: 740px) {
+    .home-body li a{
+        font-size: 6px;
+    }
+}

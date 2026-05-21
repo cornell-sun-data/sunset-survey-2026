@@ -282,6 +282,6 @@ hr {
 
 @media (max-width: 740px) {
     .home-body li a{
-        font-size: 6px;
+        font-size: 6px !important;
     }
 }
